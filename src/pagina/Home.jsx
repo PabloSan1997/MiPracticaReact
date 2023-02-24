@@ -1,8 +1,10 @@
 import React from 'react'
 import { Imagenes1, Imagenes2 } from '../componentes/ImagenesHome.jsx'
+import { useCelulares } from '../contextos/useCelulares.jsx';
 import '../estilos/home.css';
 
 function Home() {
+
   return (
     <div className="contenedor">
       <div className="caja">

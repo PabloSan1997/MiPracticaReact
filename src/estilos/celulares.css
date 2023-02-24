@@ -1,0 +1,96 @@
+.cabezon {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.cabezon h2 {
+  margin: auto auto auto 2%;
+  border-bottom: 1px solid rgb(6, 0, 22);
+  width: 94%;
+  font-family: arial;
+}
+.cabezon p {
+  margin: auto auto auto 2%;
+  font-size: 1.2rem;
+  font-family: arial;
+}
+
+.buscador {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.buscador .buscar {
+  margin: auto auto auto 2%;
+  font-size: 1.5rem;
+  font-family: arial;
+  border-bottom: 1px solid rgb(6, 0, 22);
+  width: 94%;
+}
+.buscador .entrada {
+  margin: auto auto auto 2%;
+  height: 55%;
+  width: 93%;
+  padding: 1px 5px;
+  font-size: 1.8rem;
+}
+
+.partes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 5px auto;
+}
+.partes .bloque {
+  width: 30%;
+  margin: 10px auto;
+  height: 450px;
+  border: 2px solid rgb(1, 1, 26);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.partes .bloque .imagenes {
+  width: 95%;
+  height: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+.partes .bloque .imagenes .slider {
+  display: flex;
+  height: 100%;
+}
+.partes .bloque .imagenes .slider .slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.partes .bloque .imagenes .slider .slide img {
+  width: 100%;
+  max-height: 150%;
+}
+.partes .bloque h2 {
+  font-family: arial;
+  margin: auto;
+  color: rgb(2, 2, 29);
+}
+.partes .bloque .texto {
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+}
+.partes .bloque .texto.precio {
+  font-size: 1.3rem;
+}
+
+.mensaje {
+  width: 95%;
+  font-family: arial;
+  margin: 10px auto;
+}
+.mensaje p {
+  font-size: 2rem;
+  color: rgb(3, 3, 37);
+}/*# sourceMappingURL=celulares.css.map */
