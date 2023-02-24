@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import "colores.scss";
+body{
+    background: whitesmoke;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background: $color-titulo;
+    display: flex;
+    .caja{
+        display: flex;
+        margin: auto auto auto 0;
+        width: 30%;
+        img{
+            max-width:8%;
+            margin: auto 2px auto auto;
+        }
+        h1{
+            font-family: arial;
+            color:  white;
+            margin: auto auto auto 10px;
+            font-size: 1.5rem;
+        }
+    }
+    .lista{
+        width: 70%;
+        height: 100%;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            list-style: none;
+            li{
+                width: fit-content;
+                height: fit-content;
+                margin: auto;
+                .mandar{
+                    width: fit-content;
+                    height: fit-content;
+                    font-size: 1.5rem;
+                    font-family: arial;
+                    color: white;
+                    text-decoration: none;
+                    box-shadow: 0 0 5px rgba(255, 255, 255, 0.377);
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    &:hover{
+                        background: $color-seleccion;
+                        box-shadow: none;
+                    }
+                    &.activado{
+                        background: $color-seleccion;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

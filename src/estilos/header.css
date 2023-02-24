@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: whitesmoke;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background: rgb(6, 0, 22);
+  display: flex;
+}
+header .caja {
+  display: flex;
+  margin: auto auto auto 0;
+  width: 30%;
+}
+header .caja img {
+  max-width: 8%;
+  margin: auto 2px auto auto;
+}
+header .caja h1 {
+  font-family: arial;
+  color: white;
+  margin: auto auto auto 10px;
+  font-size: 1.5rem;
+}
+header .lista {
+  width: 70%;
+  height: 100%;
+}
+header .lista ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+header .lista ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+header .lista ul li .mandar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.5rem;
+  font-family: arial;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.377);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+header .lista ul li .mandar:hover {
+  background: rgb(29, 11, 77);
+  box-shadow: none;
+}
+header .lista ul li .mandar.activado {
+  background: rgb(29, 11, 77);
+  box-shadow: none;
+}/*# sourceMappingURL=header.css.map */
