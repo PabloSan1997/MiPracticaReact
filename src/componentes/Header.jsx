@@ -2,7 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <header className="cabeza">
+        <h1>Mi pagina de productos</h1>
+    </header>
   )
 }
 
