@@ -1,4 +1,5 @@
 import React from 'react'
+import { useIntervalo } from '../contextos/intervalo';
 
 
 function Datos({datos}) {
@@ -26,7 +27,11 @@ function Datos({datos}) {
     }
 }
 function Cajas({nombre, descripcion, precio, imagenes}){
-    const estilo = {width:imagenes.length*100+'%'}
+    const {margen} = useIntervalo(imagenes);
+    let estilo = {width:imagenes.length*100+'%'}
+    if(estilo.width>'100%'){
+        estilo={...estilo, ...margen}
+    }
     return (
         <div className="bloque">
             <div className="imagenes">

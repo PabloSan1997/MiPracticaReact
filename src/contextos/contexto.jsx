@@ -1,12 +1,13 @@
 import React from 'react'
-import { useCelulares } from './useCelulares';
-import { useLaps } from './useLaptops';
+
+import { useLlamarDatos } from './useLlamarDatos';
+
 
 const Contexto = React.createContext();
 
 function Provedor({ children }) {
-  const { celulares } = useCelulares();
-  const {lap}=useLaps();
+  const celulares = useLlamarDatos('https://dummyjson.com/products/category/smartphones');
+  const lap = useLlamarDatos('https://dummyjson.com/products/category/laptops');
   const [buscador1, setBuscador1] = React.useState('');
   const [buscador2, setBuscador2] = React.useState('');
   let datosCel = [];

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Buscador } from '../componentes/Buscador'
-import { Datos } from '../componentes/DatosCelulares'
+import { Datos } from '../componentes/Datos'
 import { useMicontexto } from '../contextos/contexto';
 import '../estilos/celulares.css';
 

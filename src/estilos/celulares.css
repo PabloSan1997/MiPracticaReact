@@ -74,6 +74,8 @@
 .partes .bloque h2 {
   font-family: arial;
   margin: auto;
+  max-width: 90%;
+  text-align: center;
   color: rgb(2, 2, 29);
 }
 .partes .bloque .texto {
