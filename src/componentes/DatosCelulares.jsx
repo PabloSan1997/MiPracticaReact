@@ -1,12 +1,11 @@
 import React from 'react'
-import { useMicontexto } from '../contextos/contexto'
 
-function DatosCelulares() {
-    const {datosCel}=useMicontexto();
-    if(datosCel.length>=1){
+
+function Datos({datos}) {
+    if(datos.length>=1){
         return (
             <div className="partes">
-                {datosCel.map(elementos=>(
+                {datos.map(elementos=>(
                  <Cajas 
                  key={elementos.id}
                  nombre={elementos.title}
@@ -45,4 +44,4 @@ function Cajas({nombre, descripcion, precio, imagenes}){
         </div>
     );
 }
-export{DatosCelulares}
+export{Datos}

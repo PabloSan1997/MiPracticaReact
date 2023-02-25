@@ -1,8 +1,12 @@
 import React from 'react'
 import { Buscador } from '../componentes/Buscador'
-import { DatosCelulares } from '../componentes/DatosCelulares'
+import { Datos } from '../componentes/DatosCelulares'
+import { useMicontexto } from '../contextos/contexto';
 import '../estilos/celulares.css';
+
 function Celulares() {
+
+  const {datosCel}=useMicontexto();
   return (
     <>
         <div className="cabezon">
@@ -11,7 +15,7 @@ function Celulares() {
             el precio puede cambiar sin previo avizo</p>
         </div>
         <Buscador/>
-        <DatosCelulares/>
+        <Datos datos={datosCel}/>
     </>
   )
 }
